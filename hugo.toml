@@ -35,4 +35,8 @@ name = "Github"
 url = "https://github.com/"
 
 [params.assets]
-#customCSS = [ "extended/custom.css" ]
+customCSS = [ "extended/custom.css" ]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
