@@ -1,0 +1,38 @@
+baseURL = 'https://exoprime-labs.github.io/'
+languageCode = 'en-us'
+title = 'EXOGENIC Pvt Ltd'
+theme = 'PaperMod'                # Tell Hugo to use your new theme
+
+[menu]
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 10
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 20
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 30
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 40
+
+[params.profileMode]
+enabled = true
+title = "EXOGENIC"
+subtitle = "Move Beyond Limits"
+
+[[params.profileMode.buttons]]
+name = "Archive"
+url = "/archive"
+
+[[params.profileMode.buttons]]
+name = "Github"
+url = "https://github.com/"
+
+[params.assets]
+#customCSS = [ "extended/custom.css" ]

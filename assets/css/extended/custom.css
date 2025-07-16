@@ -1,0 +1,580 @@
+/* PaperMod Extended Color Theme
+ * Based on color palette: #0074D8, #24272B, #BFC0C0, #FF331F, #FBE5FF
+ * Usage: Add this CSS file after the main PaperMod CSS
+ */
+
+ :root {
+    /* Primary Color Palette */
+    --primary-blue: #0074D8;
+    --primary-dark: #24272B;
+    --primary-gray: #BFC0C0;
+    --primary-red: #FF331F;
+    --primary-light: #FFFFFF;
+    
+    /* Extended Color Variations */
+    --primary-blue-hover: #0066CC;
+    --primary-red-hover: #FF4533;
+    
+    /* Theme Variables Override */
+    --theme: var(--primary-light);
+    --entry: var(--primary-light);
+    --primary: var(--primary-dark);
+    --secondary: var(--primary-gray);
+    --tertiary: var(--primary-gray);
+    --content: var(--primary-dark);
+    --hljs-bg: var(--primary-light);
+    --code-bg: var(--primary-light);
+    --border: var(--primary-gray);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --theme: var(--primary-dark);
+    --entry: var(--primary-dark);
+    --primary: var(--primary-light);
+    --secondary: var(--primary-gray);
+    --tertiary: var(--primary-gray);
+    --content: var(--primary-light);
+    --hljs-bg: var(--primary-dark);
+    --code-bg: var(--primary-dark);
+    --border: var(--primary-gray);
+}
+
+/* Header and Navigation */
+.header {
+    background: var(--primary-blue);
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.header .nav a {
+    color: var(--primary-light);
+    transition: color 0.3s ease;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.header .nav a:hover {
+    color: var(--primary-red);
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.header .nav a:active,
+.header .nav a:focus {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.header .logo {
+    color: var(--primary-light);
+    font-weight: 600;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.header .logo:hover {
+    color: var(--primary-red);
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.header .logo:active,
+.header .logo:focus {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Header Buttons */
+.header button,
+.header .btn,
+.header input[type="button"],
+.header input[type="submit"] {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--primary-light);
+    transition: color 0.3s ease;
+}
+
+.header button:hover,
+.header .btn:hover,
+.header input[type="button"]:hover,
+.header input[type="submit"]:hover {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--primary-red);
+}
+
+.header button:active,
+.header .btn:active,
+.header input[type="button"]:active,
+.header input[type="submit"]:active,
+.header button:focus,
+.header .btn:focus,
+.header input[type="button"]:focus,
+.header input[type="submit"]:focus {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    color: var(--primary-red);
+}
+
+/* Headers (h1, h2, h3, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+h1:active, h2:active, h3:active, h4:active, h5:active, h6:active,
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Header links */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active,
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.theme-toggle {
+    background: var(--primary-gray);
+    border: 1px solid var(--primary-red);
+}
+
+.theme-toggle:hover {
+    background: var(--primary-red);
+    color: var(--primary-light);
+}
+
+/* Main Content */
+.main {
+    background: var(--theme);
+    color: var(--content);
+}
+
+/* Home Page Content Area */
+.home-content,
+.home-info,
+.home-posts {
+    background: var(--theme) !important;
+}
+
+/* Remove any different colored rectangles/containers */
+.content,
+.post-content,
+.page-content,
+.single-content {
+    background: var(--theme) !important;
+}
+
+/* Post Entry */
+.post-entry {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.post-entry:hover {
+    border-color: var(--primary-red);
+    box-shadow: 0 4px 12px rgba(255, 51, 31, 0.15);
+}
+
+.post-entry .entry-header h2 {
+    color: var(--primary-blue);
+}
+
+.post-entry .entry-header h2:hover {
+    color: var(--primary-red);
+}
+
+.post-entry .entry-content {
+    color: var(--content);
+}
+
+.post-entry .entry-footer {
+    color: var(--secondary);
+}
+
+.post-entry .entry-footer a {
+    color: var(--primary-red);
+}
+
+/* Post Meta */
+.post-meta {
+    color: var(--secondary);
+}
+
+.post-meta a {
+    color: var(--primary-blue);
+}
+
+.post-meta a:hover {
+    color: var(--primary-red);
+}
+
+/* Tags */
+.post-tags a {
+    background: var(--primary-gray);
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-gray);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.post-tags a:hover {
+    background: var(--primary-red);
+    color: var(--primary-light);
+    border-color: var(--primary-red);
+}
+
+/* Buttons */
+.btn,
+button {
+    background: var(--primary-blue);
+    color: var(--primary-light);
+    border: 1px solid var(--primary-blue);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: var(--primary-red);
+    border-color: var(--primary-red);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: var(--primary-gray);
+    color: var(--primary-dark);
+    border-color: var(--primary-gray);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-red);
+    color: var(--primary-light);
+    border-color: var(--primary-red);
+}
+
+/* Links */
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-red);
+}
+
+/* Special link accents */
+.read-more,
+.continue-reading {
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
+.read-more:hover,
+.continue-reading:hover {
+    color: var(--primary-blue);
+}
+
+/* Code Blocks */
+pre,
+code {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.highlight {
+    background: var(--hljs-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--primary-red);
+    background: var(--primary-light);
+    padding-left: 1rem;
+    margin-left: 0;
+}
+
+[data-theme="dark"] blockquote {
+    background: var(--primary-dark);
+    border-left-color: var(--primary-red);
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    background: var(--entry);
+}
+
+th {
+    background: var(--primary-blue);
+    color: var(--primary-light);
+    border: 1px solid var(--primary-blue);
+}
+
+th:first-child {
+    border-left: 2px solid var(--primary-red);
+}
+
+td {
+    border: 1px solid var(--border);
+    background: var(--entry);
+}
+
+tr:hover {
+    background: var(--primary-gray);
+}
+
+[data-theme="dark"] tr:hover {
+    background: var(--primary-gray);
+}
+
+/* Search */
+.search-input {
+    background: var(--entry);
+    border: 2px solid var(--border);
+    color: var(--content);
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: var(--primary-red);
+    outline: none;
+}
+
+/* Pagination */
+.pagination {
+    color: var(--secondary);
+}
+
+.pagination a {
+    color: var(--primary-blue);
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background: var(--primary-red);
+    color: var(--primary-light);
+    border-color: var(--primary-red);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-dark);
+    color: var(--primary-light);
+    border-top: 2px solid var(--primary-red);
+}
+
+.footer a {
+    color: var(--primary-blue);
+}
+
+.footer a:hover {
+    color: var(--primary-red);
+}
+
+/* Sidebar */
+.sidebar {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.sidebar-item {
+    border-bottom: 1px solid var(--border);
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+/* Archive Page */
+.archive-item {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s ease;
+}
+
+.archive-item:hover {
+    background: var(--primary-gray);
+}
+
+.archive-item:hover .archive-title {
+    color: var(--primary-red);
+}
+
+[data-theme="dark"] .archive-item:hover {
+    background: var(--primary-gray);
+}
+
+/* Profile/About */
+.profile {
+    background: var(--theme) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.profile-title {
+    color: var(--primary-blue);
+}
+
+.profile-title:hover {
+    color: var(--primary-red);
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-red);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-blue);
+}
+
+/* Selection */
+::selection {
+    background: var(--primary-red);
+    color: var(--primary-light);
+}
+
+::-moz-selection {
+    background: var(--primary-red);
+    color: var(--primary-light);
+}
+
+/* Focus States */
+*:focus {
+    outline: 2px solid var(--primary-red);
+    outline-offset: 2px;
+}
+
+/* Alerts/Notifications */
+.alert {
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.alert-info {
+    background: var(--primary-light);
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-dark);
+}
+
+.alert-warning {
+    background: var(--primary-light);
+    border: 1px solid var(--primary-red);
+    color: var(--primary-dark);
+}
+
+.alert-error {
+    background: var(--primary-light);
+    border: 1px solid var(--primary-red);
+    color: var(--primary-dark);
+}
+
+[data-theme="dark"] .alert-info,
+[data-theme="dark"] .alert-warning,
+[data-theme="dark"] .alert-error {
+    background: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+/* Reading Progress Bar */
+.reading-progress {
+    height: 3px;
+    background: var(--primary-red);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: width 0.3s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 1rem;
+    }
+    
+    .post-entry {
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .header,
+    .footer,
+    .sidebar,
+    .theme-toggle {
+        display: none !important;
+    }
+}
