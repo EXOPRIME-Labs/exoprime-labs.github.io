@@ -1,4 +1,4 @@
-baseURL = 'https://exoprime-labs.github.io/'
+baseURL = 'https://exogenic.xyz/'
 languageCode = 'en-us'
 title = 'EXOGENIC Pvt Ltd'
 theme = 'PaperMod'                # Tell Hugo to use your new theme
