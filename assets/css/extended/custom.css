@@ -2,7 +2,7 @@
  * Based on color palette: #0074D8, #24272B, #BFC0C0, #FF331F, #FBE5FF
  * Usage: Add this CSS file after the main PaperMod CSS
  */
-
+ 
  :root {
     /* Primary Color Palette */
     --primary-blue: #0074D8;
