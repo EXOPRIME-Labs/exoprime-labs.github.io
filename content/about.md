@@ -2,8 +2,6 @@
 title: "About ExoGenic"
 draft: false
 ---
-
-
 ### Company Overview
 **About ExoGenic**
 ExoGenic (Pvt) Ltd is a pioneering MedTech startup focused on developing smart, accessible medical and assistive devices. Founded with the mission to make advanced prosthetics available to everyone, we're breaking down barriers through innovative design, local manufacturing, and community-centered support.
