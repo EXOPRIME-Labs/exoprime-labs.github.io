@@ -15,15 +15,15 @@ weight = 20
 [[menu.main]]
 name = "Projects"
 url = "/projects/"
-weight = 30
+weight = 40
 [[menu.main]]
 name = "Blog"
 url = "/blog/"
-weight = 40
+weight = 50
 [[menu.main]]
 name = "Team"
 url = "/team/"
-weight = 50
+weight = 30
 
 [params.profileMode]
 enabled = true
