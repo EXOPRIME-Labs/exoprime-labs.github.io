@@ -4,7 +4,7 @@ draft: false
 weight: 10
 ---
 
-# Harindu Dulanjaya Bandara
+Harindu Dulanjaya Bandara
 
 📍 Sri Lanka  
 📞 +94 777 255 476  
